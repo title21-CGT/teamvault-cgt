@@ -1,26 +1,9 @@
-# TeamVault space configuration
-#
-# A space is one team's instance. This file is the contract for what packs
-# are enabled, what compliance level applies, and how auto-deploy behaves.
-#
-# THIS FILE IS THE TEMPLATE. Teams should fork and customize.
-
-name: teamvault-template
-description: TeamVault master template — fork to create your team space.
-
-# Light Palace taxonomy (Kingdom → Palace → Wing → Hall → Room + Tunnels).
-# Only KINGDOMS are centrally declared here; palaces/wings/halls/rooms are
-# free-form per-repo (repos.yaml) and per-entry — they emerge from use.
-# See docs/KB-FOUNDATIONS.md for the canonical taxonomy reference.
-#
-# v0.1.x: kingdoms here are documentation-only. v0.1.5+ adds soft validation
-# (/teamvault-publish WARNs if an entry's `kingdom` isn't in this list;
-# never blocks). Rename `your-org` to match your team (e.g., title-21).
+name: teamvault-cgt
+description: "TeamVault master template \u2014 fork to create your team space."
 kingdoms:
-  - your-org
-
-compliance: false           # true → auto-deploy disabled; pack updates require /teamvault-apply-pack-update
+- your-org
+compliance: false
 enabled_packs:
-  - hipaa-reference         # example; remove if your team doesn't handle PHI
-  - clickup                 # example; remove if your team doesn't use ClickUp
-auto_deploy: true           # automatically apply pack updates within ~60s of git pull
+- hipaa-reference
+- clickup
+auto_deploy: true
