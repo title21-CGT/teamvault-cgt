@@ -1,7 +1,7 @@
 name: teamvault-cgt
 description: "TeamVault master template \u2014 fork to create your team space."
 kingdoms:
-- your-org
+- title21-CGT
 compliance: false
 enabled_packs:
 - hipaa-reference

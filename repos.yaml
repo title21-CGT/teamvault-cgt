@@ -40,3 +40,13 @@
 #   kingdom: your-org
 #   palace: another-product
 #   wing: frontend
+- remote: https://github.com/title21-CGT/cgt-backend.git
+  workspace: default
+  kingdom: title21-CGT
+  palace: cgt
+  wing: backend
+- remote: https://github.com/title21-CGT/cgt-frontend.git
+  workspace: default
+  kingdom: title21-CGT
+  palace: cgt
+  wing: frontend
