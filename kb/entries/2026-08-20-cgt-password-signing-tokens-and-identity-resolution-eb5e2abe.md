@@ -136,7 +136,7 @@ server's own specs cannot fail for a field the server no longer knows about.
 Form completion used to sign **silently from the session**, with no dialog at all. It now asks.
 
 Password fields are deliberately hostile to password managers (`autoComplete='off'`,
-`data-1p-ignore'`): a credential replayed from a browser store was not executed by the signer
+`data-1p-ignore`): a credential replayed from a browser store was not executed by the signer
 at the moment of signing, which is the entire point of re-entry.
 
 `lib/signature.ts` and its tests are deleted — nothing imported them.
